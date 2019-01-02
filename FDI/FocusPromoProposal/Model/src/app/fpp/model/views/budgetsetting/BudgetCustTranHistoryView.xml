@@ -110,7 +110,14 @@ AND BudgetCustTran.ACTION IN ('APPROVED', 'REJECTED')"
     EntityAttrName="Percentage"
     EntityUsage="BudgetCustTran"
     AliasName="PERCENTAGE"
-    IsUpdateable="false"/>
+    IsUpdateable="false">
+    <Properties>
+      <SchemaBasedProperties>
+        <FMT_FORMAT
+          ResId="app.fpp.model.views.budgetsetting.BudgetCustTranHistoryView.Percentage_FMT_FORMAT"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="Amount"
     PrecisionRule="true"
